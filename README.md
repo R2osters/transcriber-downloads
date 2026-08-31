@@ -36,6 +36,10 @@ complémentaires » puis « Exécuter quand même ». Qui préfère ne rien exé
 d'opaque trouvera dans le dépôt de code de quoi construire l'installeur
 lui-même.
 
-Le paquet macOS est fabriqué par la CI du dépôt de code, sur un runner Apple.
-Lui non plus n'est pas signé : Gatekeeper le refusera au premier lancement,
-le contournement est le clic droit puis « Ouvrir ».
+Le paquet macOS est fabriqué par la CI du dépôt de code, sur un runner Apple,
+puis recopié ici : un workflow GitHub Actions ne peut publier que dans son
+propre dépôt sans jeton personnel. Lui non plus n'est pas signé — Gatekeeper
+refusera le double-clic, le contournement est le clic droit puis « Ouvrir ».
+
+Il n'a jamais tourné sur un Mac réel. ffmpeg et ffprobe embarqués sont en
+x86_64 et passent par Rosetta 2 ; l'application est native arm64.
