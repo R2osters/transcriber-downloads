@@ -17,16 +17,7 @@ l'historique.
 ## Le site
 
 Sept pages HTML statiques, sans dépendance ni étape de construction. Pour le
-consulter en local :
-
-```bash
-python -m http.server 8000
-```
-
-Puis <http://127.0.0.1:8000>.
-
-GitHub Pages ne fonctionne sur un dépôt privé qu'avec un compte payant. Tant
-que ce dépôt est privé, le site se consulte en local.
+consulter en local 
 
 ## Les installeurs
 
